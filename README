@@ -15,7 +15,7 @@ It offers at the current stage the following functionalities:
 
 CONFIGURATION / OPERATING INSTRUCTIONS:
 
-At the current stage, the software only runs only on Linux-Systems. It
+At the current stage, the software only runs on Linux-Systems. It
 was tested on Ubuntu 12.04LTS and Edubuntu 13.04. It is written in
 Python, and was tested with Python 2.7.
 
