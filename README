@@ -1,0 +1,65 @@
+==================================================
+                  Logoff-Nanny
+==================================================
+
+This is a software project to assist parents/guardians to control the
+time their kids spend on their computer.
+
+It offers at the current stage the following functionalities:
+- Automated Logoff of the user after a specific time in one day was
+  spent logged in.
+- Distinguishing between weekends and weekdays (i.e. one can set
+  different times for those days).
+- Customizable duration settings for weekends and weekdays with
+  minute-precision.
+
+CONFIGURATION / OPERATING INSTRUCTIONS:
+
+At the current stage, the software only runs only on Linux-Systems. It
+was tested on Ubuntu 12.04LTS and Edubuntu 13.04. It is written in
+Python, and was tested with Python 2.7.
+
+In order to set a custom time that you want your kids to be at most
+on the computer, please change the respective constants in the
+automated_logoff.py file in the folder /src.
+
+We assume that your kid has a separate account on the computer.
+
+Note here, that for every day, when the kid logs in for the first
+time, the program creates a .txt file in
+/home/"yourKidsAccountName"/.timeSpec with the file-name representing
+the current day. If you want to grant your child more time for a
+specific day, please just secretly increase the number in the file to
+the desired time in minutes. The file-names and the folder-name are
+customizable.
+
+INSTALLATION:
+
+Make sure you read the configuration instruction.
+
+Hide the source-file(s) somewhere on the computer (I personally use
+hidden folders for that, as the kids cannot find them on their
+own. Once they can, well, then no restriction is needed any more in my
+opinion ;-)), and grant the account of your kid reading access to it.
+
+Then, place an autostart entry for your kid's account, such that the
+python-file is loaded on startup.
+
+LICENCE:
+
+Every content in this project is licenced under GPLv3 (see
+https://www.gnu.org/copyleft/gpl.html for more information).
+
+TODO:
+
+- Visualization for the kid considering how much time is left
+- Extend to other operating systems
+- Test on different Python-versions
+- Make it more easy to use-configure for non-Linux-affine -- or more
+  general not that computer-affine -- parents.
+
+CHANGELOG:
+
+Current version: 0.1
+
+- Initial Version

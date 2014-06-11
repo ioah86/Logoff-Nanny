@@ -1,0 +1,36 @@
+
+==================================================
+   F1 - Logg off computer after a specified amount of time every day
+   F2 - Distinguishing between weekdays and weekends
+
+Solution:
+ - Write a file for every day.
+      Location: /home/.timeSpec/
+      fileName YYYY_MM_DD.txt
+      If file not existent - User was not online yet on that day.
+         In this case, create that file with the time stamp
+	 Find out if it is a weekday or a weekend
+	 Start off with 30 minutes or one hour, depending on the day of the week we are in now
+ - Update the file for the specific day after every other minute
+ - gnome-session-quit --logout --no-prompt
+
+
+==================================================
+
+   F5 - Display remaining time
+
+	    - System tray with clock
+	    http://developer.ubuntu.com/resources/technologies/application-indicators/
+
+
+==================================================
+
+   F10 - Adding\removing remaining time
+
+       This should be done by simply changing the remaining time in the respective file that was created
+
+==================================================
+
+   F15 - Starting with system login
+
+   http://wiki.ubuntuusers.de/Autostart

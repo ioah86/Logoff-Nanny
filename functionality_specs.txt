@@ -1,0 +1,8 @@
+[X] F1 - Logg off computer after a specified amount of time every day
+[X] F2 - Distinguishing between weekdays and weekends
+
+[ ] F5 - Display remaining time
+
+[(X)] F10 - Adding\removing remaining time
+
+[(X)] F15 - Starting with system login
